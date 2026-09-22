@@ -1,0 +1,15 @@
+metric,value
+source_prior_rows,32434489
+mart_rows,13307953
+mart_distinct_customers,206209
+mart_distinct_products,49677
+top_product_relationships,5325258
+unmatched_denominator_rows,0
+invalid_reorder_rate_rows,0
+invalid_penetration_rows,0
+purchase_span_negative_rows,0
+purchase_count_singletons,7982695
+purchase_count_repeat_pairs,5325258
+source_prior_distinct_orders,3214874
+source_prior_distinct_customers,206209
+purchase_count_reconciles,1

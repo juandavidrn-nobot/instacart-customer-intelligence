@@ -1,0 +1,9 @@
+metric,value
+source_prior_item_rows,32434489
+mart_order_rows,3214874
+sum_basket_size,32434489
+basket_size_reconciles,1
+first_order_rows,206209
+source_prior_order_count,3214874
+order_count_reconciles,1
+reorder_share_out_of_range,0

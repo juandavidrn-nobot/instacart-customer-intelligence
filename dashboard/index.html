@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Customer Intelligence — Executive Overview</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+:root{
+  --bg:#eaf2f8;
+  --card:#ffffff;
+  --navy:#0c234b;
+  --muted:#60708a;
+  --line:#d6e2ee;
+  --accent:#35b9c7;
+  --accent2:#5a8dee;
+  --accent3:#8ab7f1;
+  --shadow:0 10px 24px rgba(27,58,92,.08);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);font-family:'Montserrat',Arial,sans-serif;color:var(--navy)}
+.page{max-width:1500px;margin:0 auto;padding:26px}
+.header{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:23px 30px;box-shadow:var(--shadow);display:flex;justify-content:space-between;align-items:center}
+.title{font-size:28px;font-weight:700;letter-spacing:.4px}.subtitle{margin-top:6px;color:var(--muted);font-size:14px}.overview{font-size:13px;letter-spacing:1.4px;font-weight:600;color:#5a6780;text-transform:uppercase}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow)}
+.kpi{padding:19px 20px 18px;min-height:185px}.kpi h3{font-size:18px;margin:0;font-weight:700}.kpi .desc{margin-top:4px;font-size:13px;color:var(--muted)}
+.kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}.kpiMetric{padding-top:16px;border-top:1px solid var(--line)}.kpiMetric .label{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.6px}.kpiMetric .value{font-size:31px;font-weight:700;margin-top:5px;white-space:nowrap}.kpiMetric .sub{font-size:11px;color:var(--muted);margin-top:3px}.kpiFooter{margin-top:13px;font-size:11px;color:var(--muted)}
+.chart-card{padding:18px 20px 20px;min-height:425px}.chart-title{font-size:17px;font-weight:700}.chart-sub{font-size:12px;color:var(--muted);margin-top:4px}.chart-area{margin-top:18px}.legend{display:flex;gap:17px;font-size:11px;color:var(--muted);margin-bottom:12px}.dot{width:9px;height:9px;border-radius:50%;display:inline-block;margin-right:5px}.axis{display:flex;justify-content:space-between;color:#7c8aa0;font-size:10px;margin:0 6px 6px}.plot{position:relative;height:235px;padding:10px 8px 28px;border-top:1px solid #edf2f7}
+.gridline{position:absolute;left:0;right:0;border-top:1px dashed #e4ebf3}.bars{position:absolute;inset:14px 24px 30px 24px;display:flex;justify-content:space-around;align-items:flex-end;gap:28px}.group{height:100%;display:flex;align-items:flex-end;gap:10px;min-width:120px;justify-content:center}.bar{width:26px;border-radius:7px 7px 2px 2px;position:relative;cursor:default}.bar span{position:absolute;bottom:100%;left:50%;transform:translateX(-50%);font-size:10px;color:#44546c;font-weight:600;white-space:nowrap;margin-bottom:4px}.xlabels{position:absolute;left:20px;right:20px;bottom:6px;display:flex;justify-content:space-around;color:#7c8aa0;font-size:10px}.callout{display:flex;justify-content:center;align-items:center;margin-top:12px;font-weight:700;font-size:14px;color:var(--navy)}
+.simple-bars{padding-top:10px}.simple-row{margin:15px 0}.simple-label{display:flex;justify-content:space-between;font-size:11px;margin-bottom:7px}.track{height:22px;background:#edf4fa;border-radius:10px;overflow:hidden}.fill{height:100%;border-radius:10px}.fill.dark{background:var(--accent2)}.fill.light{background:var(--accent)}.fill.alt{background:var(--accent3)}
+.category-list{margin-top:13px}.cat-row{display:grid;grid-template-columns:88px 1fr 52px;gap:8px;align-items:center;font-size:10px;margin:9px 0}.cat-track{height:10px;background:#edf4fa;border-radius:8px;overflow:hidden}.cat-fill{height:100%;background:var(--accent);border-radius:8px}.cat-val{text-align:right;font-weight:600;color:#56667f}
+.footer{margin-top:18px;padding:0;background:var(--card);border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(3,1fr)}.action{padding:18px 24px;text-align:center}.action+.action{border-left:1px solid var(--line)}.action h4{margin:0;font-size:13px}.action p{margin:6px 0 0;color:var(--muted);font-size:11px}
+.note{margin-top:16px;color:#74839a;font-size:10px;text-align:right}
+@media (max-width:1000px){.grid,.footer{grid-template-columns:1fr}.kpis{grid-template-columns:1fr}.header{gap:10px}.overview{display:none}.card{min-height:auto}}
+</style>
+</head>
+<body>
+<div class="page">
+  <header class="header">
+    <div><div class="title">CUSTOMER INTELLIGENCE</div><div class="subtitle">Protect Revenue • Grow Revenue • Expand Customer Value</div></div>
+    <div class="overview">Executive Overview</div>
+  </header>
+
+  <section class="grid">
+    <article class="card kpi">
+      <h3>PROTECT</h3><div class="desc">Protect existing revenue</div>
+      <div class="kpis">
+        <div class="kpiMetric"><div class="label">Customers</div><div class="value">6,763</div><div class="sub">priority population</div></div>
+        <div class="kpiMetric"><div class="label">Signal</div><div class="value">+1.91</div><div class="sub">days in following window</div></div>
+        <div class="kpiMetric"><div class="label">Outcome</div><div class="value">26–30</div><div class="sub">orders</div></div>
+      </div>
+      <div class="kpiFooter"><b>KPI:</b> Incremental retention / future order frequency</div>
+    </article>
+    <article class="card kpi">
+      <h3>GROW</h3><div class="desc">Create incremental revenue</div>
+      <div class="kpis">
+        <div class="kpiMetric"><div class="label">Baseline</div><div class="value">0.463%</div><div class="sub">target adoption</div></div>
+        <div class="kpiMetric"><div class="label">Exposed</div><div class="value">2.834%</div><div class="sub">target adoption</div></div>
+        <div class="kpiMetric"><div class="label">Lift</div><div class="value">+2.37</div><div class="sub">percentage points</div></div>
+      </div>
+      <div class="kpiFooter"><b>KPI:</b> Incremental product adoption</div>
+    </article>
+    <article class="card kpi">
+      <h3>EXPAND</h3><div class="desc">Increase customer value</div>
+      <div class="kpis">
+        <div class="kpiMetric"><div class="label">Target</div><div class="value">4,758</div><div class="sub">validation cohort</div></div>
+        <div class="kpiMetric"><div class="label">Expansion</div><div class="value">64.84%</div><div class="sub">target customers</div></div>
+        <div class="kpiMetric"><div class="label">Gap</div><div class="value">+11.13</div><div class="sub">percentage points</div></div>
+      </div>
+      <div class="kpiFooter"><b>KPI:</b> Incremental department adoption</div>
+    </article>
+  </section>
+
+  <section class="grid">
+    <article class="card chart-card">
+      <div class="chart-title">PROTECT SIGNAL</div><div class="chart-sub">Customer-relative cadence</div>
+      <div class="chart-area">
+        <div class="legend"><span><span class="dot" style="background:var(--accent2)"></span>Persistent group</span><span><span class="dot" style="background:var(--accent)"></span>Customer baseline</span></div>
+        <div class="plot">
+          <div class="gridline" style="bottom:25%"></div><div class="gridline" style="bottom:50%"></div><div class="gridline" style="bottom:75%"></div>
+          <div class="bars">
+            <div class="group"><div class="bar" style="height:90%;background:var(--accent2)"><span>+1.87d</span></div><div class="bar" style="height:100%;background:var(--accent)"><span>+1.91d</span></div></div>
+            <div class="group"><div class="bar" style="height:88%;background:var(--accent2)"><span>+1.87d</span></div><div class="bar" style="height:100%;background:var(--accent)"><span>+1.91d</span></div></div>
+          </div>
+          <div class="xlabels"><span>Orders 26–30</span><span>Orders 31–35</span></div>
+        </div>
+        <div class="callout">Deterioration persists across both future windows</div>
+      </div>
+    </article>
+
+    <article class="card chart-card">
+      <div class="chart-title">W2 PRODUCT ADOPTION</div><div class="chart-sub">Baseline vs Exposed</div>
+      <div class="chart-area">
+        <div class="simple-bars">
+          <div class="simple-row"><div class="simple-label"><span>Baseline</span><b>0.463%</b></div><div class="track"><div class="fill light" style="width:16.3%"></div></div></div>
+          <div class="simple-row"><div class="simple-label"><span>Exposed</span><b>2.834%</b></div><div class="track"><div class="fill dark" style="width:100%"></div></div></div>
+        </div>
+        <div class="callout">+2.37 pp holdout gap • 847 exposed customers</div>
+      </div>
+    </article>
+
+    <article class="card chart-card">
+      <div class="chart-title">W3 PORTFOLIO EXPANSION</div><div class="chart-sub">Target vs Benchmark</div>
+      <div class="chart-area">
+        <div class="simple-bars">
+          <div class="simple-row"><div class="simple-label"><span>Target</span><b>64.84%</b></div><div class="track"><div class="fill dark" style="width:100%"></div></div></div>
+          <div class="simple-row"><div class="simple-label"><span>Benchmark</span><b>53.71%</b></div><div class="track"><div class="fill light" style="width:82.8%"></div></div></div>
+        </div>
+        <div class="callout">+11.13 pp expansion gap</div>
+        <div class="category-list">
+          <div class="cat-row"><span>Frozen</span><div class="cat-track"><div class="cat-fill" style="width:100%"></div></div><span class="cat-val">+8.63 pp</span></div>
+          <div class="cat-row"><span>Pantry</span><div class="cat-track"><div class="cat-fill" style="width:89%"></div></div><span class="cat-val">+7.66 pp</span></div>
+          <div class="cat-row"><span>Bakery</span><div class="cat-track"><div class="cat-fill" style="width:79%"></div></div><span class="cat-val">+6.79 pp</span></div>
+          <div class="cat-row"><span>Deli</span><div class="cat-track"><div class="cat-fill" style="width:77%"></div></div><span class="cat-val">+6.68 pp</span></div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <footer class="footer">
+    <div class="action"><h4>RETENTION TEST</h4><p>Validate and protect existing revenue</p></div>
+    <div class="action"><h4>PRODUCT TEST</h4><p>Drive incremental product adoption</p></div>
+    <div class="action"><h4>CATEGORY TEST</h4><p>Expand customer value across categories</p></div>
+  </footer>
+  <div class="note">Proxy dataset: Instacart Market Basket Analysis • Historical signals are observational and require controlled validation</div>
+</div>
+</body>
+</html>
